@@ -6,16 +6,6 @@ A modern, intuitive project management and team collaboration platform designed 
 
 TaskFlow Pro revolutionizes project management by providing an all-in-one solution for task tracking, team collaboration, progress monitoring, and project analytics. The application features a sleek dark-themed interface, advanced project analytics, role-based access controls, and real-time collaboration tools optimized for modern teams.
 
-## Live Applications
-
-- Frontend: <https://taskflow-pro.vercel.app/>
-- API: <https://taskflow-pro-api.onrender.com/>
-
-## Documentation
-
-- [Frontend Documentation](https://github.com/yourusername/taskflow-pro/blob/main/frontend/README.md)
-- [Backend Documentation](https://github.com/yourusername/taskflow-pro/blob/main/backend/README.md)
-
 ## Core Features
 
 ### Authentication & Authorization
@@ -69,10 +59,6 @@ TaskFlow Pro revolutionizes project management by providing an all-in-one soluti
 
 ## Screenshots
 
-|                                                        |                                                   |
-| :----------------------------------------------------: | :-----------------------------------------------: |
-|   ![Dashboard](https://i.imgur.com/dashboard.png)      |  ![Project View](https://i.imgur.com/projects.png)  |
-|   ![Kanban Board](https://i.imgur.com/kanban.png)    |  ![Analytics](https://i.imgur.com/analytics.png)   |
 
 ## Future Development Roadmap
 
@@ -119,6 +105,3 @@ TaskFlow Pro revolutionizes project management by providing an all-in-one soluti
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the [MIT LICENSE](LICENSE).
