@@ -1,107 +1,109 @@
 # TaskFlow Pro
 
-## Overview
+TaskFlow Pro is a comprehensive, full-stack Learning Management System (LMS) designed to streamline the educational process for students, lecturers, and administrators. It provides a centralized platform for course management, material distribution, and user administration.
 
-A modern, intuitive project management and team collaboration platform designed to streamline workflows, enhance productivity, and foster seamless team communication. TaskFlow Pro combines powerful project management tools with real-time collaboration features to help teams deliver exceptional results.
+## 🚀 About The Project
 
-TaskFlow Pro revolutionizes project management by providing an all-in-one solution for task tracking, team collaboration, progress monitoring, and project analytics. The application features a sleek dark-themed interface, advanced project analytics, role-based access controls, and real-time collaboration tools optimized for modern teams.
+This project is a modern web application built with a separate frontend and backend. The frontend is a responsive and interactive user interface built with Next.js and Tailwind CSS, while the backend is a robust REST API powered by Node.js, Express, and MongoDB.
 
-## Core Features
+## ✨ Features
 
-### Authentication & Authorization
-- Secure user registration and login
-- JWT-based authentication with refresh tokens
-- Role-based access control (Team Member, Project Manager, Admin)
-- Advanced password security with bcrypt
+- **User Authentication:** Secure registration and login for students, lecturers, and administrators.
+- **Role-Based Access Control:** Different permissions and views for different user roles (student, lecturer, admin).
+- **Course Management:** Admins and lecturers can create, update, and delete courses.
+- **Material Management:** Lecturers can upload and manage course materials (e.g., PDFs, documents).
+- **Student Enrollment:** Students can enroll in available courses.
+- **Dashboard:** A central hub for users to access their courses, materials, and other relevant information.
+- **User Management:** Admins can manage all users in the system.
 
-### Project Management
-- Create, manage, and track projects with detailed analytics
-- Task management with priority levels and deadlines
-- Kanban board view for visual project tracking
-- Project templates and workflow automation
-
-### Team Collaboration
-- Real-time team chat and messaging
-- File sharing and document management
-- Team member assignment and role management
-- Progress tracking and milestone management
-
-### Task Management
-- Create and assign tasks with priority levels
-- Set deadlines and track completion status
-- Time tracking and productivity analytics
-- Task dependencies and workflow automation
-
-### Analytics & Reporting
-- Project progress analytics and insights
-- Team performance metrics and reporting
-- Time tracking and productivity analysis
-- Custom dashboard with key performance indicators
-
-## Technology Stack
+## 🛠️ Tech Stack
 
 ### Frontend
-- Next.js 15 with App Router
-- TypeScript for type safety
-- Tailwind CSS with custom dark theme
-- Radix UI components
-- React Query for state management
-- Lucide React icons
-- Framer Motion for animations
+
+- [Next.js](https://nextjs.org/) - React framework for server-side rendering and static site generation.
+- [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework.
+- [shadcn/ui](https://ui.shadcn.com/) - Re-usable components built using Radix UI and Tailwind CSS.
+- [Axios](https://axios-http.com/) - Promise-based HTTP client for the browser and Node.js.
 
 ### Backend
-- Express.js with TypeScript
-- MongoDB with Mongoose ODM
-- JWT authentication with refresh tokens
-- Multer for file uploads
-- CORS and security middleware
-- Advanced error handling
 
-## Screenshots
+- [Node.js](https://nodejs.org/) - JavaScript runtime environment.
+- [Express](https://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js.
+- [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript.
+- [MongoDB](https://www.mongodb.com/) - NoSQL database.
+- [Mongoose](https://mongoosejs.com/) - Elegant MongoDB object modeling for Node.js.
+- [JSON Web Tokens (JWT)](https://jwt.io/) - For secure user authentication.
 
+## 🏁 Getting Started
 
-## Future Development Roadmap
+To get a local copy up and running, follow these simple steps.
 
-### Advanced Project Management
-- AI-powered project timeline optimization
-- Predictive resource allocation
-- Risk assessment and mitigation
-- Advanced project templates
-- Multi-project portfolio management
+### Prerequisites
 
-### Enhanced Collaboration Features
-- Video conferencing integration
-- Screen sharing and remote collaboration
-- Meeting scheduling and calendar integration
-- Advanced file versioning and collaboration
-- Team performance gamification
+- [Node.js](https://nodejs.org/en/download/) (v14 or later)
+- [npm](https://www.npmjs.com/get-npm) or [yarn](https://classic.yarnpkg.com/en/docs/install/)
+- [MongoDB](https://www.mongodb.com/try/download/community) (local installation or a cloud service like MongoDB Atlas)
 
-### Technical Improvements
-- Real-time notifications with WebSockets
-- Mobile application development
-- API rate limiting and caching
-- Advanced search and filtering
-- Social authentication integration
+### Installation
 
-### Analytics & Intelligence
-- AI-powered project insights
-- Predictive analytics for project success
-- Resource optimization recommendations
-- Performance benchmarking
-- Custom reporting and dashboards
+1.  **Clone the repository:**
 
-### Enterprise Features
-- Organization and workspace management
-- Advanced user permissions and roles
-- Integration with third-party tools
-- Advanced security and compliance
-- Custom branding and white-labeling
+    ```sh
+    git clone https://github.com/your-username/taskflow_pro.git
+    cd taskflow_pro
+    ```
 
-## Contributing
+2.  **Backend Setup:**
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+    - Navigate to the backend directory:
+      ```sh
+      cd backend
+      ```
+    - Install NPM packages:
+      ```sh
+      npm install
+      ```
+    - Create a `.env` file in the `backend` directory and add the following environment variables:
+      ```env
+      PORT=4000
+      MONGODB_URI=<your_mongodb_connection_string>
+      JWT_SECRET=<your_jwt_secret>
+      FRONTEND_URL=http://localhost:3000
+      ```
+    - Start the backend server:
+      ```sh
+      npm start
+      ```
 
+3.  **Frontend Setup:**
+
+    - Open a new terminal and navigate to the frontend directory:
+      ```sh
+      cd frontend
+      ```
+    - Install NPM packages:
+      ```sh
+      npm install
+      ```
+    - Create a `.env.local` file in the `frontend` directory and add the following environment variable:
+      ```env
+      NEXT_PUBLIC_API_URL=http://localhost:4000/api
+      ```
+    - Start the frontend development server:
+      ```sh
+      npm run dev
+      ```
+
+After following these steps, the application should be running at `http://localhost:3000`.
+
+## 📁 Project Structure
+
+The project is organized into two main directories:
+
+-   `frontend/`: Contains the Next.js application, including all components, pages, services, and styles.
+-   `backend/`: Contains the Node.js/Express application, including routes, controllers, models, and middleware.
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
